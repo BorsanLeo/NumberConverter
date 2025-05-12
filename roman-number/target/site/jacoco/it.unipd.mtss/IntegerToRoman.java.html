@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IntegerToRoman.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">roman-number</a> &gt; <a href="index.source.html" class="el_package">it.unipd.mtss</a> &gt; <span class="el_source">IntegerToRoman.java</span></div><h1>IntegerToRoman.java</h1><pre class="source lang-java linenums">////////////////////////////////////////////////////////////////////
+// LEONARDO BORSAN 2101098 
+// ELIA LEONETTI 2009998
+////////////////////////////////////////////////////////////////////
+package it.unipd.mtss;
+
+<span class="nc" id="L7">public class IntegerToRoman {</span>
+    public static String convert(int number) {
+
+        // Definizione delle lettere romane e dei loro valori corrispondenti
+<span class="fc" id="L11">        String[] romanLetters = {&quot;V&quot;, &quot;IV&quot;, &quot;I&quot;};</span>
+<span class="fc" id="L12">        int[] values = {5, 4, 1};</span>
+
+<span class="fc" id="L14">        StringBuilder romanNumber = new StringBuilder();</span>
+
+        // Itera attraverso i valori romani e aggiungi le lettere corrispondenti
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        for (int i = 0; i &lt; values.length; i++) {</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">            while (number &gt;= values[i]) {</span>
+<span class="fc" id="L19">                number -= values[i];</span>
+<span class="fc" id="L20">                romanNumber.append(romanLetters[i]);</span>
+            }
+        }
+
+<span class="fc" id="L24">        return romanNumber.toString();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
