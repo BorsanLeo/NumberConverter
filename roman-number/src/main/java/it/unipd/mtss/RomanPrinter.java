@@ -16,26 +16,32 @@ public class RomanPrinter {
         // Definisci la rappresentazione ASCII art orizzontale per ogni lettera romana
         String[][] asciiLetters = {
             {//Riga1
+                " __      __",  // V
                 "  _____ " // I
             },
 
             {//Riga2
+                " \\ \\    / /",  // V
                 " |_   _|" // I
             },
 
             {//Riga3
+                "  \\ \\  / / ",  // V
                 "   | |  " // I
             },
 
             {//Riga4
+                "   \\ \\/ /  ", // V
                 "   | |  " // I
             },
                 
             {//Riga5
+                "    \\  /   ", // V
                 "  _| |_ " // I
             },
                 
             {//Riga6
+                "     \\/    ", // V
                 " |_____|" // I
             },
         };
@@ -43,7 +49,7 @@ public class RomanPrinter {
         for( int z=0; z<6; z++) {
             for (char c : romanNumber.toCharArray()) {
                 // Aggiungi la rappresentazione ASCII art orizzontale della lettera corrente
-                asciiArt.append(asciiLetters[z]["I".indexOf(c)]);
+                asciiArt.append(asciiLetters[z]["VI".indexOf(c)]);
             }
             asciiArt.append("\n");
         }
