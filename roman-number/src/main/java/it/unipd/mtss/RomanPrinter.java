@@ -61,7 +61,7 @@ public class RomanPrinter {
         for( int z=0; z<6; z++) {
             for (char c : romanNumber.toCharArray()) {
                 // Aggiungi la rappresentazione ASCII art orizzontale della lettera corrente
-                asciiArt.append(asciiLetters[z]["XVI".indexOf(c)]);
+                asciiArt.append(asciiLetters[z]["LXVI".indexOf(c)]);
             }
             asciiArt.append("\n");
         }
