@@ -16,6 +16,7 @@ public class RomanPrinter {
         // Definisci la rappresentazione ASCII art orizzontale per ogni lettera romana
         String[][] asciiLetters = {
             {//Riga1
+                "  __  __ ", // M
                 "  _____  ",  // D
                 "   _____ ",  // C
                 "  _      ",  // L
@@ -25,6 +26,7 @@ public class RomanPrinter {
             },
 
             {//Riga2
+                " |  \\/  |", // M
                 " |  __ \\ ",  // D
                 "  / ____|",  // C
                 " | |     ",  // L
@@ -34,6 +36,7 @@ public class RomanPrinter {
             },
 
             {//Riga3
+                " | \\  / |", // M
                 " | |  | |",  // D
                 " | |     ",  // C
                 " | |     ",  // L
@@ -43,6 +46,7 @@ public class RomanPrinter {
             },
 
             {//Riga4
+                " | |\\/| |", // M
                 " | |  | |", // D
                 " | |     ", // C
                 " | |     ", // L
@@ -52,6 +56,7 @@ public class RomanPrinter {
             },
                 
             {//Riga5
+                " | |  | |", // M
                 " | |__| |", // D
                 " | |____ ", // C
                 " | |____ ", // L
@@ -61,6 +66,7 @@ public class RomanPrinter {
             },
                 
             {//Riga6
+                " |_|  |_|", // M
                 " |_____/ ", // D
                 "  \\_____|", // C
                 " |______|", // L
@@ -73,7 +79,7 @@ public class RomanPrinter {
         for( int z=0; z<6; z++) {
             for (char c : romanNumber.toCharArray()) {
                 // Aggiungi la rappresentazione ASCII art orizzontale della lettera corrente
-                asciiArt.append(asciiLetters[z]["DCLXVI".indexOf(c)]);
+                asciiArt.append(asciiLetters[z]["MDCLXVI".indexOf(c)]);
             }
             asciiArt.append("\n");
         }
