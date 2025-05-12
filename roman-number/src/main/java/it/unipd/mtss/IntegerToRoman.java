@@ -6,6 +6,9 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
     public static String convert(int number) {
+        if (number < 1 || number > 1000) {
+            throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 1000");
+        }
 
         // Definizione delle lettere romane e dei loro valori corrispondenti
         String[] romanLetters = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
