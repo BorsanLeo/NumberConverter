@@ -16,36 +16,42 @@ public class RomanPrinter {
         // Definisci la rappresentazione ASCII art orizzontale per ogni lettera romana
         String[][] asciiLetters = {
             {//Riga1
+                "  _      ",  // L
                 " __   __",  // X
                 " __      __",  // V
                 "  _____ " // I
             },
 
             {//Riga2
+                " | |     ",  // L
                 " \\ \\ / /",  // X
                 " \\ \\    / /",  // V
                 " |_   _|" // I
             },
 
             {//Riga3
+                " | |     ",  // L
                 "  \\ V / ",  // X
                 "  \\ \\  / / ",  // V
                 "   | |  " // I
             },
 
             {//Riga4
+                " | |     ", // L
                 "   > <  ", // X
                 "   \\ \\/ /  ", // V
                 "   | |  " // I
             },
                 
             {//Riga5
+                " | |____ ", // L
                 "  / . \\ ", // X
                 "    \\  /   ", // V
                 "  _| |_ " // I
             },
                 
             {//Riga6
+                " |______|", // L
                 " /_/ \\_\\", // X
                 "     \\/    ", // V
                 " |_____|" // I
